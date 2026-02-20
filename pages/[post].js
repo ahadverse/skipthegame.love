@@ -87,10 +87,8 @@ const PostList = () => {
       objects,
     }));
   }
-
   const groupedData = groupByDate(freeCityPost);
   const groupedData2 = groupByDate(premiumCityPost);
-
   useEffect(() => {
     setLoading(true);
     if (!router?.query?.post) {
